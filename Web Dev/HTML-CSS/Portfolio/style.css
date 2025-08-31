@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+    --main-color: #0D0D0D;
+    --grey-color: #262626;
+    --light-color: #F2F2F2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--light-color);
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 3385px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------header section------*/
+.header {
+    position: fixed;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 25px;
+}
+
+.header .navbar {
+    padding-right: 4%;
+    display: flex;
+    gap: 55px;
+}
+
+.header .logo {
+    padding-left: 3%;
+}
+
+/*------homepage section------*/
+.homepage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;  
+    padding: 0 10%;
+    gap: 50px; 
+    padding-top: 1%;
+}
+
+.profile-info {
+    max-width: 1000px;
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.profile-info #name {
+    max-width: 700px;
+}
+
+#name h1 {
+    font-size: 64px;
+}
+
+.profile-info #course {
+    max-width: 500px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#course h3 {
+    font-size: 24px;
+    color: var(--light-color);
+}
+
+.profile-info .btn {
+    height: 100px;
+    display: flex;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+.profile-info #hireMe {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    background: var(--light-color);
+}
+
+#hireMe a {
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+.profile-info #learnMore {
+    width: 256px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--light-color);
+    background: var(--main-color);
+}
+
+#learnMore a {
+    font-size: 24px;
+}
+
+img {
+   width: 432px;
+   height: 379px;
+}
+
+.icons {
+    position: absolute;
+    bottom: 1px;
+    left: 30px;
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+/*------aboutpage section------*/
+.aboutpage {
+    height: 820px;
+    background-color: var(--grey-color);
+    scroll-margin-top: 70px;
+}
+
+.about {
+    display: block;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+
+.aboutme {
+    display: flex;
+    width: 1300px;
+    margin-top: 30px;
+}
+
+.aboutme p {
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme img {
+    width: 190px;
+    height: 190px;
+    margin-right: 20px;
+}
+
+.cv{
+    border: 1px solid white;
+    border-radius: 50px;
+    max-width:max-content;
+    padding:5px 10px;
+    margin-top: 10px;
+    background-color: var(--main-color);
+}
+
+.cv a {
+    font-size: 20px;
+}
+
+.line {
+    border: 1px solid var(--light-color);
+    width: 1350px;
+    margin: 30px;
+}
+
+.education #educ {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.educ-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+#elem {
+    background-color: var(--light-color);
+    max-width: fit-content;
+    height: 220px;
+    padding: 18px 0 19px 23px;
+    border-radius: 10px;
+}
+
+#elem h1, h2, h3, h4 {
+    color: var(--main-color);
+}
+
+#elem h1 {
+    width: 300px;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#elem h2 {
+    font-size: 20px;
+}
+
+#elem h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#elem h4 {
+    font-size: 13px;
+}
+
+#hs {
+    background-color: var(--light-color);
+    max-width: fit-content;
+    height: 220px;
+    padding: 18px 0 19px 23px;
+    border-radius: 10px;
+}
+
+#hs h1, h2, h3, h4 {
+    color: var(--main-color);
+}
+
+#hs h1 {
+    width: 300px;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#hs h2 {
+    font-size: 20px;
+}
+
+#hs h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#hs h4 {
+    font-size: 13px;
+}
+
+#college {
+    background-color: var(--light-color);
+    max-width: fit-content;
+    height: 220px;
+    padding: 18px 0 19px 23px;
+    border-radius: 10px;
+}
+
+#college h1, h2, h3, h4 {
+    color: var(--main-color);
+}
+
+#college h1 {
+    width: 300px;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+#college h2 {
+    font-size: 20px;
+}
+
+#college h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#college h4 {
+    font-size: 13px;
+}
+
+/*------skillpage section------*/
+.skillpage {
+    height: 820px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+
+.skills h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skills1 {
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.skills1 img{
+    width: 220px;
+    height: 207px;
+}
+
+.skills1 .html,.css, .java {
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 5px solid var(--light-color);
+    border-radius: 50px;
+    padding: 5px 21px 6px 22px;
+}
+
+.skills2 {
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.skills2 .github, .python {
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 5px solid var(--light-color);
+    border-radius: 50px;
+    padding: 5px 21px 6px 22px;
+}
+
+.skills2 .github {
+    padding: 5px 13px 6px 13px;
+}
+
+.skills2 .c {
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 5px solid var(--light-color);
+    border-radius: 50px;
+    padding: 25px 41px 26px 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c img {
+    width: 184px;
+    height: 179px;
+}
+
+.github img {
+    width: 241px;
+    height: 214px;
+}
+
+.python img {
+    width: 215px;
+    height: 209px;
+}
+
+/*------projectpage section------*/
+.projectpage {
+    height: 820px;
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 70px;
+}
+
+.project h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.proj {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+
+.frstPrj {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid var(--light-color);
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+.frstPrj img {
+    width: 395px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+#name1 h2 {
+    color: var(--light-color);
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.secPrj {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid var(--light-color);
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+.secPrj img {
+    width: 395px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+#name2 h2 {
+    color: var(--light-color);
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+/*------contact section------*/
+.contact {
+    height: 230px;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.containName {
+    max-width: fit-content;
+    display: inline-flex;
+    padding: 36px 13px 10px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact h1 {
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.contactIcons {
+    max-width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.contactIcons img{
+    width: 40px;
+    height: 70px;
+}
+
+.contactNav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contactNav h2 {
+    padding-bottom: 10px;
+}
+
+.contact .contactNav a {
+    padding-bottom: 3px;
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.contact .line {
+    height: 180px;
+    width: 1px;
+    background-color: var(--main-color);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo img {
+    width: 25px;
+    height: 25px;
+}
+
+.contactInfo .email img {
+    width: 30px;
+    height: 24px;
+}
+
+.contactInfo .place, .number, .email {
+    display: flex;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.contactInfo h2 {
+    padding-bottom: 10px;
+}
+
+.contactInfo h3 {
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.contactInfo .place {
+    width: 400px;
+}
