@@ -17,11 +17,11 @@ html {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--main-color);
-    height: 3385px;
 }
 
 a {
@@ -35,16 +35,26 @@ a {
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     z-index: 100;
     font-size: 25px;
+    position: relative;
 }
 
-.header .navbar {
-    padding-right: 4%;
+.navbar {
+    width: auto;
+    gap: 30px;
     display: flex;
-    gap: 55px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 40px;
+}
+
+.hamburger {
+  display: none; 
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .header .logo {
@@ -53,38 +63,33 @@ a {
 
 /*------homepage section------*/
 .homepage {
-    height: 100vh;
+    min-height: 93vh;
+    background-color: var(--main-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .home {
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100vh;  
-    padding: 0 10%;
-    gap: 50px; 
-    padding-top: 1%;
+    flex-wrap: wrap;
+    width: 75%;
+    flex: 1;
 }
 
 .profile-info {
-    max-width: 1000px;
-    padding-left: 55px;
-    padding-top: 20px;
-}
-
-.profile-info #name {
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
 }
 
 #name h1 {
     font-size: 64px;
-}
-
-.profile-info #course {
-    max-width: 500px;
-    padding-top: 10px;
-    padding-bottom: 20px;
 }
 
 #course h3 {
@@ -92,22 +97,26 @@ a {
     color: var(--light-color);
 }
 
+#course {
+    width: 500px;
+    margin-top: 10px;
+}
+
 .profile-info .btn {
-    height: 100px;
     display: flex;
-    gap: 25px;
-    padding-top: 10px;
+    margin-top: 30px;
+    gap: 30px;
 }
 
 .profile-info #hireMe {
     width: 170px;
     height: 50px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    background-color: var(--light-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 1px solid var(--main-color);
-    background: var(--light-color);
 }
 
 #hireMe a {
@@ -130,35 +139,43 @@ a {
     font-size: 24px;
 }
 
-img {
-   width: 432px;
-   height: 379px;
+.profile{
+    width: 532px;
+    height: 479px;
+}
+
+.profile img{
+   max-width: 100%;
+   height: auto;
 }
 
 .icons {
-    position: absolute;
-    bottom: 1px;
-    left: 30px;
-    padding: 10px;
     display: flex;
+    align-self: flex-start;
     gap: 25px;
+    margin: 20px;
 }
 
 .icons img {
     width: 40px;
     height: 40px;
 }
-/*------aboutpage section------*/
+
+/* ------aboutpage section------ */
 .aboutpage {
-    height: 820px;
+    min-height: 100vh;
     background-color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     scroll-margin-top: 70px;
 }
 
 .about {
-    display: block;
-    justify-items: center;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .about h1 {
@@ -167,14 +184,16 @@ img {
 
 .aboutme {
     display: flex;
-    width: 1300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .aboutme p {
-    font-size: 29px;
-    display: flex;
-    align-items: center;
+    font-size: 29px; 
+    max-width: 1050px;   
+    text-align: justify;
 }
 
 .aboutme img {
@@ -184,11 +203,10 @@ img {
 }
 
 .cv{
-    border: 1px solid white;
+    border: 1px solid var(--light-color);
     border-radius: 50px;
-    max-width:max-content;
     padding:5px 10px;
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
     background-color: var(--main-color);
 }
 
@@ -198,7 +216,7 @@ img {
 
 .line {
     border: 1px solid var(--light-color);
-    width: 1350px;
+    width: 90%;
     margin: 30px;
 }
 
@@ -212,15 +230,17 @@ img {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding-top: 30px;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
 #elem {
     background-color: var(--light-color);
     max-width: fit-content;
-    height: 220px;
+    max-height: fit-content;
     padding: 18px 0 19px 23px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 #elem h1, h2, h3, h4 {
@@ -249,9 +269,10 @@ img {
 #hs {
     background-color: var(--light-color);
     max-width: fit-content;
-    height: 220px;
+    max-height: fit-content;
     padding: 18px 0 19px 23px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 #hs h1, h2, h3, h4 {
@@ -280,9 +301,10 @@ img {
 #college {
     background-color: var(--light-color);
     max-width: fit-content;
-    height: 220px;
+    max-height: fit-content;
     padding: 18px 0 19px 23px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 #college h1, h2, h3, h4 {
@@ -310,25 +332,23 @@ img {
 
 /*------skillpage section------*/
 .skillpage {
-    height: 820px;
+    min-height: 100vh;
     background-color: var(--main-color);
     display: flex;
     justify-content: center;
 }
 
 .skills h1 {
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0 20px 0;
 }
 
 .skills1 {
-    width: 1500px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 70px;
+    flex-wrap: wrap;
 }
 
 .skills1 img{
@@ -337,61 +357,50 @@ img {
 }
 
 .skills1 .html,.css, .java {
-    max-width: fit-content;
-    max-height: fit-content;
-    border: 5px solid var(--light-color);
+    display: flex;
+    width: 283px;
+    height: 238px;
+    padding: 15px 32px 16px 31px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
-    padding: 5px 21px 6px 22px;
+    border: 5px solid var(--light-color);
+    margin: 50px;
 }
 
 .skills2 {
-    width: 1500px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .skills2 .github, .python {
-    max-width: fit-content;
-    max-height: fit-content;
-    border: 5px solid var(--light-color);
+    display: flex;
+    width: 283px;
+    height: 238px;
+    padding: 12px 21px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
-    padding: 5px 21px 6px 22px;
-}
-
-.skills2 .github {
-    padding: 5px 13px 6px 13px;
+    border: 5px solid var(--light-color);
+    margin: 50px;
 }
 
 .skills2 .c {
-    max-width: fit-content;
-    max-height: fit-content;
-    border: 5px solid var(--light-color);
-    border-radius: 50px;
-    padding: 25px 41px 26px 42px;
     display: flex;
+    width: 283px;
+    height: 238px;
+    padding: 29px 50px 30px 49px;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    border: 5px solid var(--light-color);
+    margin: 50px 50px 100px 50px;
 }
 
-.c img {
-    width: 184px;
-    height: 179px;
-}
-
-.github img {
-    width: 241px;
-    height: 214px;
-}
-
-.python img {
-    width: 215px;
-    height: 209px;
-}
-
-/*------projectpage section------*/
+/* ------projectpage section------*/
 .projectpage {
-    height: 820px;
+    min-height: 100vh;
     background-color: var(--grey-color);
     display: flex;
     justify-content: center;
@@ -408,8 +417,11 @@ img {
 
 .proj {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     gap: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .frstPrj {
@@ -430,12 +442,21 @@ img {
     display: block;
 }
 
-#name1 h2 {
-    color: var(--light-color);
-    width: 300px;
-    font-size: 30px;
+.proj1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj1 .name1 {
+    margin-top: 20px;
+    width: 250px;
+    display: flex;
     text-align: center;
-    margin-top: 30px;
+}
+
+.name1 h2 {
+    color: var(--light-color);
 }
 
 .secPrj {
@@ -456,19 +477,21 @@ img {
     display: block;
 }
 
-#name2 h2 {
-    color: var(--light-color);
-    width: 300px;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 30px;
+.proj2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.names {
+.proj2 .name2 {
+    margin-top: 20px;
+    width: 250px;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    gap: 200px;
+    text-align: center;
+}
+
+.name2 h2 {
+    color: var(--light-color);
 }
 
 /*------contact section------*/
@@ -562,3 +585,4 @@ img {
 .contactInfo .place {
     width: 400px;
 }
+
